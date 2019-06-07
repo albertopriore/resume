@@ -1,0 +1,110 @@
+body {
+  font-family: "LatoWebLight";
+  font-style: normal;
+  font-size: 5mm;
+  margin: 0;
+}
+
+strong {
+  font-family: "LatoWebBold";
+}
+
+.wrapper {
+  width: 210mm;
+  height: 297mm;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  page-break-after: always;
+  padding: 10mm 12mm;
+}
+
+.header {
+  margin-bottom: 15mm;
+  margin-top: 5mm;
+}
+
+.header__title {
+  font-family: "LatoWebBold";
+  font-size: 12mm;
+  margin-bottom: 1mm;
+}
+
+.header__subtitle {
+  font-family: "LatoWebBold";
+  font-size: 8mm;
+  color: #aaaaaa;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: calc(30% - 3.5mm) calc(70% - 3.5mm);
+  grid-gap: 7mm;
+  align-items: start;
+  margin-bottom: 8mm;
+}
+
+.section.section--contacts {
+  grid-template-columns: calc(30% - 4mm) calc(35% - 1.5mm) calc(35% - 1.5mm);
+  grid-gap: 7mm;
+}
+
+.section__title {
+  font-family: "LatoWebBold";
+  font-size: 4.5mm;
+}
+
+.section__text {
+  font-size: 3.5mm;
+}
+
+.section__text p {
+  line-height: 1.4;
+}
+
+.section__text__divider {
+  margin-bottom: 3mm;
+}
+
+.section__text--role {
+  color: #555555;
+  font-family: "LatoWeb";
+}
+
+.section__text--skills {
+  font-size: 2.6mm;
+  margin-top: 1mm;
+}
+
+.section__text--date {
+  font-size: 2.6mm;
+  margin-top: 1mm;
+  background: #efefef;
+  display: inline-block;
+  padding: .5mm;
+  border-radius: .5mm;
+}
+
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media screen {
+  body {
+    background: #efefef;
+  }
+
+  .wrapper {
+    background: #ffffff;
+    box-shadow: 0 .5mm 2mm #888;
+    margin: 5mm auto;
+  }
+}
+
+@media print {
+  body {
+    width: 210mm
+  }
+}
