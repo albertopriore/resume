@@ -1,8 +1,10 @@
+html,
 body {
   font-family: "LatoWebLight";
   font-style: normal;
   font-size: 5mm;
   margin: 0;
+  color: #000;
 }
 
 strong {
@@ -21,8 +23,8 @@ strong {
 }
 
 .header {
-  margin-bottom: 15mm;
-  margin-top: 5mm;
+  margin-bottom: 10mm;
+  margin-top: 3mm;
 }
 
 .header__title {

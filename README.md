@@ -17,7 +17,7 @@ npm install -g puppeteer-cli
 Make the pdf:
 
 ```
-puppeteer print index.html index.pdf
+puppeteer print --wait-until=networkidle0 index.html index.pdf
 ```
 
 # Hire me
